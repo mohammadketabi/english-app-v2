@@ -12,9 +12,10 @@ const initialState = {
 };
 
 const Register = () => {
+  const navigate = useNavigate();
   const [values, setValues] = useState(initialState);
-
-  const { isLoading, showAlert, displayAlert } = useAppContext();
+  const { user, isLoading, showAlert, displayAlert, registerUser } =
+    useAppContext();
 
   const toggleMember = () => {
     setValues({ ...values, isMember: !values.isMember });
@@ -31,7 +32,21 @@ const Register = () => {
       displayAlert();
       return;
     }
+    const currentUser = { name, email, password };
+    if (isMember) {
+      console.log("already member!");
+    } else {
+      registerUser(currentUser);
+    }
   };
+
+  useEffect(() => {
+    if (user) {
+      setTimeout(() => {
+        navigate("/");
+      }, 3000);
+    }
+  }, [user, navigate]);
 
   return (
     <Wrapper className="full-page">
@@ -63,7 +78,7 @@ const Register = () => {
           value={values.password}
           handleChange={handleChange}
         />
-        <button type="submit" className="btn btn-block">
+        <button type="submit" className="btn btn-block" disabled={isLoading}>
           {values.isMember ? "Login" : "Register"}
         </button>
         <p>
