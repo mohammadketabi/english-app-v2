@@ -1,7 +1,13 @@
 import React from "react";
+import { CardsContainer, SearchContainer } from "../../components";
 
 const AllCards = () => {
-  return <h1>AllCards</h1>;
+  return (
+    <>
+      <SearchContainer />
+      <CardsContainer />
+    </>
+  );
 };
 
 export default AllCards;

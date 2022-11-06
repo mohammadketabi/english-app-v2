@@ -1,4 +1,4 @@
-import React, { useReducer, useContext } from "react";
+import React, { useReducer, useContext, useEffect } from "react";
 import axios from "axios";
 
 import reducer from "./reducer";
@@ -14,6 +14,18 @@ import {
   UPDATE_USER_BEGIN,
   UPDATE_USER_SUCCESS,
   UPDATE_USER_ERROR,
+  HANDLE_CHANGE,
+  CLEAR_VALUES,
+  CREATE_CARD_BEGIN,
+  CREATE_CARD_SUCCESS,
+  CREATE_CARD_ERROR,
+  GET_CARDS_BEGIN,
+  GET_CARDS_SUCCESS,
+  SET_EDIT_CARD,
+  DELETE_CARD_BEGIN,
+  EDIT_CARD_BEGIN,
+  EDIT_CARD_SUCCESS,
+  EDIT_CARD_ERROR,
 } from "./actions";
 
 const token = localStorage.getItem("token");
@@ -30,6 +42,31 @@ const initialState = {
   userLocation: userLocation || "",
   jobLocation: userLocation || "",
   showSidebar: false,
+  isEditing: false,
+  editCardId: "",
+  word: "",
+  definition: "",
+  type: "noun",
+  typeOptions: [
+    "noun",
+    "determiner",
+    "pronoun",
+    "verb",
+    "adjective",
+    "adverb",
+    "preposition",
+    "conjunction",
+    "phrase",
+    "idiom",
+  ],
+  exampleOne: "",
+  exampleTwo: "",
+  statusOptions: ["learned", "review", "favorite"],
+  status: "review",
+  cards: [],
+  totalCards: 0,
+  numOfPages: 1,
+  page: 1,
 };
 
 const AppContext = React.createContext();
@@ -147,6 +184,107 @@ const AppProvider = ({ children }) => {
     clearAlert();
   };
 
+  const handleChange = ({ name, value }) => {
+    dispatch({
+      type: HANDLE_CHANGE,
+      payload: { name, value },
+    });
+  };
+
+  const clearValues = () => {
+    dispatch({ type: CLEAR_VALUES });
+  };
+
+  const createCard = async () => {
+    dispatch({ type: CREATE_CARD_BEGIN });
+    try {
+      const { word, definition, type, exampleOne, exampleTwo, status } = state;
+
+      await authFetch.post("/cards", {
+        word,
+        definition,
+        type,
+        exampleOne,
+        exampleTwo,
+        status,
+      });
+      dispatch({
+        type: CREATE_CARD_SUCCESS,
+      });
+      dispatch({ type: CLEAR_VALUES });
+    } catch (error) {
+      if (error.response.status === 401) return;
+      dispatch({
+        type: CREATE_CARD_ERROR,
+        payload: { msg: error.response.data.msg },
+      });
+    }
+    clearAlert();
+  };
+
+  const getCards = async () => {
+    let url = `/cards`;
+
+    dispatch({ type: GET_CARDS_BEGIN });
+    try {
+      const { data } = await authFetch(url);
+      const { cards, totalCards, numOfPages } = data;
+      dispatch({
+        type: GET_CARDS_SUCCESS,
+        payload: {
+          cards,
+          totalCards,
+          numOfPages,
+        },
+      });
+    } catch (error) {
+      console.log(error.response);
+      logoutUser();
+    }
+    clearAlert();
+  };
+
+  const setEditCard = (id) => {
+    dispatch({ type: SET_EDIT_CARD, payload: { id } });
+  };
+
+  const editCard = async () => {
+    dispatch({ type: EDIT_CARD_BEGIN });
+    try {
+      const { word, definition, exampleOne, exampleTwo, type, status } = state;
+
+      await authFetch.patch(`/cards/${state.editCardId}`, {
+        word,
+        definition,
+        exampleOne,
+        exampleTwo,
+        type,
+        status,
+      });
+      dispatch({
+        type: EDIT_CARD_SUCCESS,
+      });
+      dispatch({ type: CLEAR_VALUES });
+    } catch (error) {
+      if (error.response.status === 401) return;
+      dispatch({
+        type: EDIT_CARD_ERROR,
+        payload: { msg: error.response.data.msg },
+      });
+    }
+    clearAlert();
+  };
+
+  const deleteCard = async (cardId) => {
+    dispatch({ type: DELETE_CARD_BEGIN });
+    try {
+      await authFetch.delete(`/cards/${cardId}`);
+      getCards();
+    } catch (error) {
+      logoutUser();
+    }
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -156,6 +294,13 @@ const AppProvider = ({ children }) => {
         toggleSidebar,
         logoutUser,
         updateUser,
+        handleChange,
+        clearValues,
+        createCard,
+        getCards,
+        setEditCard,
+        deleteCard,
+        editCard,
       }}
     >
       {children}

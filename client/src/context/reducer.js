@@ -9,6 +9,18 @@ import {
   UPDATE_USER_BEGIN,
   UPDATE_USER_SUCCESS,
   UPDATE_USER_ERROR,
+  HANDLE_CHANGE,
+  CLEAR_VALUES,
+  CREATE_CARD_BEGIN,
+  CREATE_CARD_SUCCESS,
+  CREATE_CARD_ERROR,
+  GET_CARDS_BEGIN,
+  GET_CARDS_SUCCESS,
+  SET_EDIT_CARD,
+  DELETE_CARD_BEGIN,
+  EDIT_CARD_BEGIN,
+  EDIT_CARD_SUCCESS,
+  EDIT_CARD_ERROR,
 } from "./actions";
 
 import { initialState } from "./appContext";
@@ -94,6 +106,102 @@ const reducer = (state, action) => {
     };
   }
   if (action.type === UPDATE_USER_ERROR) {
+    return {
+      ...state,
+      isLoading: false,
+      showAlert: true,
+      alertType: "danger",
+      alertText: action.payload.msg,
+    };
+  }
+
+  if (action.type === HANDLE_CHANGE) {
+    return { ...state, [action.payload.name]: action.payload.value };
+  }
+
+  if (action.type === CLEAR_VALUES) {
+    const initialState = {
+      isEditing: false,
+      editCardId: "",
+      word: "",
+      definition: "",
+      type: "noun",
+      exampleOne: "",
+      exampleTwo: "",
+      status: "review",
+    };
+    return { ...state, ...initialState };
+  }
+
+  if (action.type === CREATE_CARD_BEGIN) {
+    return { ...state, isLoading: true };
+  }
+  if (action.type === CREATE_CARD_SUCCESS) {
+    return {
+      ...state,
+      isLoading: false,
+      showAlert: true,
+      alertType: "success",
+      alertText: "New Card Created!",
+    };
+  }
+  if (action.type === CREATE_CARD_ERROR) {
+    return {
+      ...state,
+      isLoading: false,
+      showAlert: true,
+      alertType: "danger",
+      alertText: action.payload.msg,
+    };
+  }
+
+  if (action.type === GET_CARDS_BEGIN) {
+    return { ...state, isLoading: true, showAlert: false };
+  }
+  if (action.type === GET_CARDS_SUCCESS) {
+    return {
+      ...state,
+      isLoading: false,
+      cards: action.payload.cards,
+      totalCards: action.payload.totalCards,
+      numOfPages: action.payload.numOfPages,
+    };
+  }
+
+  if (action.type === SET_EDIT_CARD) {
+    const card = state.cards.find((card) => card._id === action.payload.id);
+    const { _id, word, definition, exampleOne, exampleTwo, type, status } =
+      card;
+    return {
+      ...state,
+      isEditing: true,
+      editCardId: _id,
+      word,
+      definition,
+      exampleOne,
+      exampleTwo,
+      type,
+      status,
+    };
+  }
+
+  if (action.type === DELETE_CARD_BEGIN) {
+    return { ...state, isLoading: true };
+  }
+
+  if (action.type === EDIT_CARD_BEGIN) {
+    return { ...state, isLoading: true };
+  }
+  if (action.type === EDIT_CARD_SUCCESS) {
+    return {
+      ...state,
+      isLoading: false,
+      showAlert: true,
+      alertType: "success",
+      alertText: "Card Updated!",
+    };
+  }
+  if (action.type === EDIT_CARD_ERROR) {
     return {
       ...state,
       isLoading: false,

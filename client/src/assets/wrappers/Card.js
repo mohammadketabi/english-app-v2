@@ -1,11 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.article`
-  background: var(--white);
-  border-radius: var(--borderRadius);
   display: grid;
   grid-template-rows: 1fr auto;
-  box-shadow: var(--shadow-2);
 
   header {
     padding: 1rem 1.5rem;
@@ -18,8 +15,8 @@ const Wrapper = styled.article`
     }
   }
   .main-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: grid;
     place-items: center;
     background: var(--primary-500);
@@ -28,28 +25,34 @@ const Wrapper = styled.article`
     font-weight: 700;
     text-transform: uppercase;
     color: var(--white);
-    margin-right: 2rem;
+    margin-bottom: 1rem;
   }
   .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     h5 {
-      margin-bottom: 0.25rem;
+      margin-bottom: 1rem;
+      color: var(--black);
+      border-bottom: 1px solid gray;
     }
     p {
       margin: 0;
       text-transform: capitalize;
-      color: var(--grey-400);
+      color: var(--grey-700);
       letter-spacing: var(--letterSpacing);
     }
   }
-  .pending {
+  .learned {
     background: #fcefc7;
     color: #e9b949;
   }
-  .interview {
+  .review {
     background: #e0e8f9;
     color: #647acb;
   }
-  .declined {
+  .favorite {
     color: #d66a6a;
     background: #ffeeee;
   }
@@ -78,6 +81,7 @@ const Wrapper = styled.article`
     text-align: center;
     width: 100px;
     height: 30px;
+    margin-top: 8px;
   }
   footer {
     margin-top: 1rem;
@@ -100,6 +104,6 @@ const Wrapper = styled.article`
   &:hover .actions {
     visibility: visible;
   }
-`
+`;
 
-export default Wrapper
+export default Wrapper;
