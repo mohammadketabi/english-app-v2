@@ -1,0 +1,922 @@
+[
+  {
+    "word": "amet consectetuer",
+    "definition": "lacinia",
+    "exampleOne": "Etiam pretium iaculis justo.",
+    "exampleTwo": "Sed sagittis.",
+    "type": "verb",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2020-12-28T04:25:01Z"
+  },
+  {
+    "word": "consequat",
+    "definition": "rhoncus",
+    "exampleOne": "Duis at velit eu est congue elementum.",
+    "exampleTwo": "Nullam molestie nibh in lectus.",
+    "type": "noun",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-09-10T10:35:50Z"
+  },
+  {
+    "word": "natoque",
+    "definition": "in ante",
+    "exampleOne": "Morbi a ipsum.",
+    "exampleTwo": "Duis consequat dui nec nisi volutpat eleifend.",
+    "type": "conjunction",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-09-01T11:38:36Z"
+  },
+  {
+    "word": "sapien",
+    "definition": "sapien in",
+    "exampleOne": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+    "exampleTwo": "Aliquam non mauris.",
+    "type": "verb",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-08-13T18:15:40Z"
+  },
+  {
+    "word": "placerat praesent",
+    "definition": "etiam vel",
+    "exampleOne": "Morbi non lectus.",
+    "exampleTwo": "Morbi vel lectus in quam fringilla rhoncus.",
+    "type": "pronoun",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-12-11T21:45:37Z"
+  },
+  {
+    "word": "praesent",
+    "definition": "habitasse",
+    "exampleOne": "Nulla suscipit ligula in lacus.",
+    "exampleTwo": "In blandit ultrices enim.",
+    "type": "verb",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-03-27T02:49:47Z"
+  },
+  {
+    "word": "ligula vehicula",
+    "definition": "justo aliquam",
+    "exampleOne": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla.",
+    "exampleTwo": "Curabitur convallis.",
+    "type": "verb",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-10-14T22:52:56Z"
+  },
+  {
+    "word": "odio",
+    "definition": "fusce",
+    "exampleOne": "Morbi ut odio.",
+    "exampleTwo": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
+    "type": "phrase",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-01-05T09:08:51Z"
+  },
+  {
+    "word": "turpis enim",
+    "definition": "sodales scelerisque",
+    "exampleOne": "Nulla mollis molestie lorem.",
+    "exampleTwo": "Suspendisse potenti.",
+    "type": "preposition",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-06-29T09:34:01Z"
+  },
+  {
+    "word": "tristique tortor",
+    "definition": "quisque",
+    "exampleOne": "Donec vitae nisi.",
+    "exampleTwo": "Vivamus vel nulla eget eros elementum pellentesque.",
+    "type": "verb",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-09-26T00:03:27Z"
+  },
+  {
+    "word": "sapien",
+    "definition": "suspendisse",
+    "exampleOne": "Praesent blandit.",
+    "exampleTwo": "Etiam justo.",
+    "type": "determiner",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-09-18T14:53:27Z"
+  },
+  {
+    "word": "viverra",
+    "definition": "sem mauris",
+    "exampleOne": "Mauris ullamcorper purus sit amet nulla.",
+    "exampleTwo": "Nam tristique tortor eu pede.",
+    "type": "idiom",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-05-13T01:38:12Z"
+  },
+  {
+    "word": "odio odio",
+    "definition": "nulla",
+    "exampleOne": "Maecenas pulvinar lobortis est.",
+    "exampleTwo": "Morbi porttitor lorem id ligula.",
+    "type": "phrase",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-11-22T13:42:01Z"
+  },
+  {
+    "word": "parturient montes",
+    "definition": "luctus rutrum",
+    "exampleOne": "Donec semper sapien a libero.",
+    "exampleTwo": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
+    "type": "determiner",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2020-11-16T02:10:08Z"
+  },
+  {
+    "word": "ipsum praesent",
+    "definition": "quisque",
+    "exampleOne": "In hac habitasse platea dictumst.",
+    "exampleTwo": "Nulla mollis molestie lorem.",
+    "type": "adverb",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-09-16T21:57:27Z"
+  },
+  {
+    "word": "mi nulla",
+    "definition": "tortor",
+    "exampleOne": "Etiam justo.",
+    "exampleTwo": "Aenean fermentum.",
+    "type": "adjective",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-01-24T01:11:01Z"
+  },
+  {
+    "word": "ante",
+    "definition": "sollicitudin ut",
+    "exampleOne": "Praesent id massa id nisl venenatis lacinia.",
+    "exampleTwo": "Duis consequat dui nec nisi volutpat eleifend.",
+    "type": "noun",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-04-06T09:26:09Z"
+  },
+  {
+    "word": "quisque erat",
+    "definition": "tortor",
+    "exampleOne": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.",
+    "exampleTwo": "Phasellus sit amet erat.",
+    "type": "phrase",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-07-30T12:09:34Z"
+  },
+  {
+    "word": "lectus",
+    "definition": "a ipsum",
+    "exampleOne": "Phasellus sit amet erat.",
+    "exampleTwo": "Nulla ac enim.",
+    "type": "determiner",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-01-18T00:23:29Z"
+  },
+  {
+    "word": "nullam",
+    "definition": "ac",
+    "exampleOne": "Ut at dolor quis odio consequat varius.",
+    "exampleTwo": "In hac habitasse platea dictumst.",
+    "type": "pronoun",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-05-27T09:41:19Z"
+  },
+  {
+    "word": "pellentesque",
+    "definition": "nisl",
+    "exampleOne": "Curabitur convallis.",
+    "exampleTwo": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "type": "pronoun",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-02-23T06:48:41Z"
+  },
+  {
+    "word": "leo",
+    "definition": "lorem",
+    "exampleOne": "Pellentesque viverra pede ac diam.",
+    "exampleTwo": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
+    "type": "adjective",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-04-27T16:50:01Z"
+  },
+  {
+    "word": "nunc nisl",
+    "definition": "tortor quis",
+    "exampleOne": "Etiam pretium iaculis justo.",
+    "exampleTwo": "Sed vel enim sit amet nunc viverra dapibus.",
+    "type": "adjective",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-06-14T19:43:48Z"
+  },
+  {
+    "word": "eros",
+    "definition": "arcu",
+    "exampleOne": "In hac habitasse platea dictumst.",
+    "exampleTwo": "Mauris lacinia sapien quis libero.",
+    "type": "adverb",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-10-14T07:43:32Z"
+  },
+  {
+    "word": "dapibus",
+    "definition": "interdum mauris",
+    "exampleOne": "Cras pellentesque volutpat dui.",
+    "exampleTwo": "Cras pellentesque volutpat dui.",
+    "type": "phrase",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-02-17T11:39:58Z"
+  },
+  {
+    "word": "dictumst aliquam",
+    "definition": "nec nisi",
+    "exampleOne": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "exampleTwo": "Curabitur convallis.",
+    "type": "noun",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-03-05T04:13:15Z"
+  },
+  {
+    "word": "mauris",
+    "definition": "nisl venenatis",
+    "exampleOne": "Nulla mollis molestie lorem.",
+    "exampleTwo": "Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.",
+    "type": "adjective",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-07-27T08:06:50Z"
+  },
+  {
+    "word": "lectus",
+    "definition": "leo",
+    "exampleOne": "Suspendisse ornare consequat lectus.",
+    "exampleTwo": "In hac habitasse platea dictumst.",
+    "type": "preposition",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-02-20T06:21:27Z"
+  },
+  {
+    "word": "vestibulum ante",
+    "definition": "in",
+    "exampleOne": "In hac habitasse platea dictumst.",
+    "exampleTwo": "Donec quis orci eget orci vehicula condimentum.",
+    "type": "preposition",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2020-11-25T03:35:01Z"
+  },
+  {
+    "word": "sapien iaculis",
+    "definition": "nunc",
+    "exampleOne": "Proin eu mi.",
+    "exampleTwo": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
+    "type": "phrase",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-03-09T03:08:03Z"
+  },
+  {
+    "word": "a",
+    "definition": "tortor id",
+    "exampleOne": "Nulla nisl.",
+    "exampleTwo": "In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+    "type": "adverb",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-08-09T20:14:28Z"
+  },
+  {
+    "word": "integer",
+    "definition": "vitae mattis",
+    "exampleOne": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "exampleTwo": "Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.",
+    "type": "adverb",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-03-15T03:36:21Z"
+  },
+  {
+    "word": "pharetra",
+    "definition": "cras",
+    "exampleOne": "Nulla facilisi.",
+    "exampleTwo": "Donec vitae nisi.",
+    "type": "idiom",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-12-21T04:14:25Z"
+  },
+  {
+    "word": "et ultrices",
+    "definition": "quis turpis",
+    "exampleOne": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.",
+    "exampleTwo": "Cras non velit nec nisi vulputate nonummy.",
+    "type": "determiner",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-10-06T14:34:46Z"
+  },
+  {
+    "word": "felis",
+    "definition": "ut",
+    "exampleOne": "Aenean fermentum.",
+    "exampleTwo": "Nulla mollis molestie lorem.",
+    "type": "conjunction",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-10-11T03:45:33Z"
+  },
+  {
+    "word": "massa id",
+    "definition": "adipiscing",
+    "exampleOne": "Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
+    "exampleTwo": "Aenean auctor gravida sem.",
+    "type": "preposition",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-08-06T13:07:25Z"
+  },
+  {
+    "word": "neque",
+    "definition": "felis",
+    "exampleOne": "Sed vel enim sit amet nunc viverra dapibus.",
+    "exampleTwo": "Sed sagittis.",
+    "type": "noun",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-05-27T00:44:29Z"
+  },
+  {
+    "word": "sapien",
+    "definition": "ac",
+    "exampleOne": "Ut at dolor quis odio consequat varius.",
+    "exampleTwo": "Morbi ut odio.",
+    "type": "noun",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-12-16T21:11:07Z"
+  },
+  {
+    "word": "interdum",
+    "definition": "fusce lacus",
+    "exampleOne": "Maecenas rhoncus aliquam lacus.",
+    "exampleTwo": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "type": "adjective",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-02-06T02:47:51Z"
+  },
+  {
+    "word": "non velit",
+    "definition": "id massa",
+    "exampleOne": "Mauris sit amet eros.",
+    "exampleTwo": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "type": "phrase",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-11-04T10:51:04Z"
+  },
+  {
+    "word": "vestibulum",
+    "definition": "pede malesuada",
+    "exampleOne": "Integer tincidunt ante vel ipsum.",
+    "exampleTwo": "Suspendisse accumsan tortor quis turpis.",
+    "type": "conjunction",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-04-25T20:36:52Z"
+  },
+  {
+    "word": "cubilia",
+    "definition": "velit donec",
+    "exampleOne": "Nulla ut erat id mauris vulputate elementum.",
+    "exampleTwo": "Aenean sit amet justo.",
+    "type": "conjunction",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-02-04T03:47:56Z"
+  },
+  {
+    "word": "consectetuer",
+    "definition": "non pretium",
+    "exampleOne": "Praesent blandit lacinia erat.",
+    "exampleTwo": "In hac habitasse platea dictumst.",
+    "type": "conjunction",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-06-13T14:40:15Z"
+  },
+  {
+    "word": "porttitor lorem",
+    "definition": "porta",
+    "exampleOne": "Donec vitae nisi.",
+    "exampleTwo": "Nunc rhoncus dui vel sem.",
+    "type": "idiom",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-10-06T22:22:32Z"
+  },
+  {
+    "word": "nisi at",
+    "definition": "nullam sit",
+    "exampleOne": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+    "exampleTwo": "Donec ut mauris eget massa tempor convallis.",
+    "type": "adverb",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-11-05T04:25:24Z"
+  },
+  {
+    "word": "nam",
+    "definition": "duis",
+    "exampleOne": "Morbi a ipsum.",
+    "exampleTwo": "Nunc rhoncus dui vel sem.",
+    "type": "noun",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-09-15T15:14:43Z"
+  },
+  {
+    "word": "parturient",
+    "definition": "ultrices mattis",
+    "exampleOne": "Donec posuere metus vitae ipsum.",
+    "exampleTwo": "Sed sagittis.",
+    "type": "pronoun",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-01-05T14:04:49Z"
+  },
+  {
+    "word": "pede",
+    "definition": "ut erat",
+    "exampleOne": "Proin risus.",
+    "exampleTwo": "Duis aliquam convallis nunc.",
+    "type": "determiner",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-12-07T21:02:54Z"
+  },
+  {
+    "word": "enim leo",
+    "definition": "ut erat",
+    "exampleOne": "Pellentesque viverra pede ac diam.",
+    "exampleTwo": "Proin risus.",
+    "type": "noun",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-11-06T06:09:52Z"
+  },
+  {
+    "word": "at ipsum",
+    "definition": "habitasse",
+    "exampleOne": "Praesent lectus.",
+    "exampleTwo": "Praesent id massa id nisl venenatis lacinia.",
+    "type": "verb",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-08-02T19:13:13Z"
+  },
+  {
+    "word": "odio curabitur",
+    "definition": "faucibus accumsan",
+    "exampleOne": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.",
+    "exampleTwo": "Phasellus sit amet erat.",
+    "type": "adverb",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-03-18T23:25:54Z"
+  },
+  {
+    "word": "leo odio",
+    "definition": "in lacus",
+    "exampleOne": "Phasellus id sapien in sapien iaculis congue.",
+    "exampleTwo": "Pellentesque at nulla.",
+    "type": "preposition",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-09-04T09:50:02Z"
+  },
+  {
+    "word": "nibh ligula",
+    "definition": "integer a",
+    "exampleOne": "Duis consequat dui nec nisi volutpat eleifend.",
+    "exampleTwo": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+    "type": "noun",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-06-11T12:05:08Z"
+  },
+  {
+    "word": "pede libero",
+    "definition": "fusce lacus",
+    "exampleOne": "Suspendisse ornare consequat lectus.",
+    "exampleTwo": "Aenean sit amet justo.",
+    "type": "determiner",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-10-08T21:02:10Z"
+  },
+  {
+    "word": "odio condimentum",
+    "definition": "quis",
+    "exampleOne": "Fusce posuere felis sed lacus.",
+    "exampleTwo": "Sed sagittis.",
+    "type": "verb",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-06-16T23:02:51Z"
+  },
+  {
+    "word": "pede malesuada",
+    "definition": "nullam",
+    "exampleOne": "Proin eu mi.",
+    "exampleTwo": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.",
+    "type": "preposition",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-05-25T00:03:12Z"
+  },
+  {
+    "word": "luctus",
+    "definition": "pretium iaculis",
+    "exampleOne": "Nullam varius.",
+    "exampleTwo": "Phasellus sit amet erat.",
+    "type": "phrase",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-08-15T08:14:20Z"
+  },
+  {
+    "word": "nulla",
+    "definition": "enim",
+    "exampleOne": "Proin at turpis a pede posuere nonummy.",
+    "exampleTwo": "Phasellus in felis.",
+    "type": "pronoun",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-10-13T17:32:42Z"
+  },
+  {
+    "word": "amet",
+    "definition": "et",
+    "exampleOne": "Nam nulla.",
+    "exampleTwo": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+    "type": "noun",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-03-13T16:23:11Z"
+  },
+  {
+    "word": "congue",
+    "definition": "ultricies",
+    "exampleOne": "Suspendisse accumsan tortor quis turpis.",
+    "exampleTwo": "Nullam molestie nibh in lectus.",
+    "type": "preposition",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2020-12-20T20:57:04Z"
+  },
+  {
+    "word": "tortor",
+    "definition": "iaculis",
+    "exampleOne": "Phasellus id sapien in sapien iaculis congue.",
+    "exampleTwo": "Maecenas ut massa quis augue luctus tincidunt.",
+    "type": "adverb",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-10-07T10:13:49Z"
+  },
+  {
+    "word": "ac est",
+    "definition": "sapien",
+    "exampleOne": "Maecenas pulvinar lobortis est.",
+    "exampleTwo": "In eleifend quam a odio.",
+    "type": "noun",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-06-21T04:49:10Z"
+  },
+  {
+    "word": "morbi",
+    "definition": "sit",
+    "exampleOne": "Mauris ullamcorper purus sit amet nulla.",
+    "exampleTwo": "Aliquam quis turpis eget elit sodales scelerisque.",
+    "type": "adverb",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-06-16T18:27:29Z"
+  },
+  {
+    "word": "eleifend pede",
+    "definition": "parturient montes",
+    "exampleOne": "Donec vitae nisi.",
+    "exampleTwo": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "type": "pronoun",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-03-24T07:03:28Z"
+  },
+  {
+    "word": "in hac",
+    "definition": "justo sit",
+    "exampleOne": "Quisque porta volutpat erat.",
+    "exampleTwo": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.",
+    "type": "adverb",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-12-29T22:20:39Z"
+  },
+  {
+    "word": "odio",
+    "definition": "tellus",
+    "exampleOne": "Pellentesque ultrices mattis odio.",
+    "exampleTwo": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.",
+    "type": "preposition",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-01-11T19:35:08Z"
+  },
+  {
+    "word": "elit sodales",
+    "definition": "vestibulum",
+    "exampleOne": "Pellentesque viverra pede ac diam.",
+    "exampleTwo": "Vivamus vestibulum sagittis sapien.",
+    "type": "verb",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-11-28T14:03:28Z"
+  },
+  {
+    "word": "luctus",
+    "definition": "quisque",
+    "exampleOne": "Fusce consequat.",
+    "exampleTwo": "Phasellus id sapien in sapien iaculis congue.",
+    "type": "determiner",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-07-22T10:28:17Z"
+  },
+  {
+    "word": "luctus",
+    "definition": "pulvinar nulla",
+    "exampleOne": "Nunc rhoncus dui vel sem.",
+    "exampleTwo": "Morbi vel lectus in quam fringilla rhoncus.",
+    "type": "noun",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-03-24T10:26:45Z"
+  },
+  {
+    "word": "ipsum praesent",
+    "definition": "in quam",
+    "exampleOne": "Duis mattis egestas metus.",
+    "exampleTwo": "Etiam vel augue.",
+    "type": "conjunction",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-10-31T22:35:16Z"
+  },
+  {
+    "word": "at velit",
+    "definition": "tincidunt",
+    "exampleOne": "Suspendisse ornare consequat lectus.",
+    "exampleTwo": "Morbi ut odio.",
+    "type": "verb",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-08-22T23:27:25Z"
+  },
+  {
+    "word": "ultrices",
+    "definition": "odio",
+    "exampleOne": "Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+    "exampleTwo": "Nulla facilisi.",
+    "type": "phrase",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-10-18T02:53:02Z"
+  },
+  {
+    "word": "at turpis",
+    "definition": "vel",
+    "exampleOne": "Aenean sit amet justo.",
+    "exampleTwo": "Sed accumsan felis.",
+    "type": "noun",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-07-19T13:47:46Z"
+  },
+  {
+    "word": "magna",
+    "definition": "pede libero",
+    "exampleOne": "Etiam pretium iaculis justo.",
+    "exampleTwo": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.",
+    "type": "adjective",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-01-26T20:06:54Z"
+  },
+  {
+    "word": "ipsum",
+    "definition": "lacus at",
+    "exampleOne": "Nam tristique tortor eu pede.",
+    "exampleTwo": "Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+    "type": "idiom",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-06-01T08:31:09Z"
+  },
+  {
+    "word": "morbi",
+    "definition": "curae duis",
+    "exampleOne": "Pellentesque at nulla.",
+    "exampleTwo": "Duis mattis egestas metus.",
+    "type": "idiom",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-03-29T13:06:35Z"
+  },
+  {
+    "word": "sapien varius",
+    "definition": "sem",
+    "exampleOne": "Pellentesque ultrices mattis odio.",
+    "exampleTwo": "In hac habitasse platea dictumst.",
+    "type": "pronoun",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-03-06T01:52:13Z"
+  },
+  {
+    "word": "quam pharetra",
+    "definition": "in",
+    "exampleOne": "Proin risus.",
+    "exampleTwo": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "type": "verb",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-07-12T04:42:43Z"
+  },
+  {
+    "word": "quis tortor",
+    "definition": "at",
+    "exampleOne": "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+    "exampleTwo": "Suspendisse potenti.",
+    "type": "conjunction",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-11-07T17:30:54Z"
+  },
+  {
+    "word": "morbi",
+    "definition": "posuere cubilia",
+    "exampleOne": "In quis justo.",
+    "exampleTwo": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "type": "verb",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-10-08T23:55:01Z"
+  },
+  {
+    "word": "quam",
+    "definition": "ut",
+    "exampleOne": "Nullam molestie nibh in lectus.",
+    "exampleTwo": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "type": "pronoun",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2020-11-17T11:11:02Z"
+  },
+  {
+    "word": "habitasse",
+    "definition": "aliquam sit",
+    "exampleOne": "Sed sagittis.",
+    "exampleTwo": "Aliquam non mauris.",
+    "type": "pronoun",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-08-04T21:46:20Z"
+  },
+  {
+    "word": "nulla",
+    "definition": "quis turpis",
+    "exampleOne": "Nullam sit amet turpis elementum ligula vehicula consequat.",
+    "exampleTwo": "Nullam sit amet turpis elementum ligula vehicula consequat.",
+    "type": "adjective",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-05-17T03:55:44Z"
+  },
+  {
+    "word": "adipiscing elit",
+    "definition": "nulla",
+    "exampleOne": "Aenean auctor gravida sem.",
+    "exampleTwo": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
+    "type": "noun",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-01-16T23:56:48Z"
+  },
+  {
+    "word": "tristique in",
+    "definition": "nulla tellus",
+    "exampleOne": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.",
+    "exampleTwo": "Nunc rhoncus dui vel sem.",
+    "type": "determiner",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-08-28T01:04:04Z"
+  },
+  {
+    "word": "id",
+    "definition": "nibh in",
+    "exampleOne": "Nulla suscipit ligula in lacus.",
+    "exampleTwo": "Aliquam erat volutpat.",
+    "type": "idiom",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2020-11-27T08:47:52Z"
+  },
+  {
+    "word": "diam",
+    "definition": "leo pellentesque",
+    "exampleOne": "Integer ac leo.",
+    "exampleTwo": "Praesent lectus.",
+    "type": "adverb",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-05-05T16:46:51Z"
+  },
+  {
+    "word": "eu tincidunt",
+    "definition": "ut",
+    "exampleOne": "Donec ut dolor.",
+    "exampleTwo": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.",
+    "type": "verb",
+    "status": "favorite",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-08-17T03:00:22Z"
+  },
+  {
+    "word": "nulla",
+    "definition": "nulla",
+    "exampleOne": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",
+    "exampleTwo": "Duis consequat dui nec nisi volutpat eleifend.",
+    "type": "conjunction",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-12-05T01:53:26Z"
+  },
+  {
+    "word": "nisl",
+    "definition": "ornare",
+    "exampleOne": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.",
+    "exampleTwo": "Suspendisse potenti.",
+    "type": "adverb",
+    "status": "review",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-09-06T03:32:25Z"
+  },
+  {
+    "word": "ultrices",
+    "definition": "est",
+    "exampleOne": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.",
+    "exampleTwo": "Aenean sit amet justo.",
+    "type": "adjective",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2021-02-03T06:53:33Z"
+  },
+  {
+    "word": "nisi",
+    "definition": "est",
+    "exampleOne": "Suspendisse accumsan tortor quis turpis.",
+    "exampleTwo": "In blandit ultrices enim.",
+    "type": "pronoun",
+    "status": "learned",
+    "createdBy": "6369496200fa08d776b1e6ac",
+    "createdAt": "2022-10-18T14:49:51Z"
+  }
+]

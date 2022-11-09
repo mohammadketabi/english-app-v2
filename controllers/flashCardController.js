@@ -2,6 +2,7 @@ import Card from "../models/Card.js";
 import { StatusCodes } from "http-status-codes";
 import { BadRequestError, NotFoundError } from "../errors/index.js";
 import checkPermissions from "../utils/checkPermissions.js";
+import mongoose from "mongoose";
 
 const createCard = async (req, res) => {
   const { word, definition } = req.body;
@@ -65,7 +66,25 @@ const updateCard = async (req, res) => {
 };
 
 const showStats = async (req, res) => {
-  res.send("show stats");
+  let stats = await Card.aggregate([
+    { $match: { createdBy: mongoose.Types.ObjectId(req.user.userId) } },
+    { $group: { _id: "$status", count: { $sum: 1 } } },
+  ]);
+
+  stats = stats.reduce((acc, curr) => {
+    const { _id: title, count } = curr;
+    acc[title] = count;
+    return acc;
+  }, {});
+
+  const defaultStats = {
+    learned: stats.learned || 0,
+    review: stats.review || 0,
+    favorite: stats.favorite || 0,
+  };
+  let monthlyWords = [];
+
+  res.status(StatusCodes.OK).json({ defaultStats, monthlyWords });
 };
 
 export { createCard, deleteCard, getAllCards, updateCard, showStats };

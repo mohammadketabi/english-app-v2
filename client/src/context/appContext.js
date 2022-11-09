@@ -26,6 +26,8 @@ import {
   EDIT_CARD_BEGIN,
   EDIT_CARD_SUCCESS,
   EDIT_CARD_ERROR,
+  SHOW_STATS_BEGIN,
+  SHOW_STATS_SUCCESS,
 } from "./actions";
 
 const token = localStorage.getItem("token");
@@ -67,6 +69,8 @@ const initialState = {
   totalCards: 0,
   numOfPages: 1,
   page: 1,
+  stats: {},
+  monthlyWords: [],
 };
 
 const AppContext = React.createContext();
@@ -239,7 +243,7 @@ const AppProvider = ({ children }) => {
       });
     } catch (error) {
       console.log(error.response);
-      logoutUser();
+      //logoutUser();
     }
     clearAlert();
   };
@@ -281,8 +285,27 @@ const AppProvider = ({ children }) => {
       await authFetch.delete(`/cards/${cardId}`);
       getCards();
     } catch (error) {
-      logoutUser();
+      //logoutUser();
     }
+  };
+
+  const showStats = async () => {
+    dispatch({ type: SHOW_STATS_BEGIN });
+    try {
+      const { data } = await authFetch("/cards/stats");
+      dispatch({
+        type: SHOW_STATS_SUCCESS,
+        payload: {
+          stats: data.defaultStats,
+          monthlyWords: data.monthlyWords,
+        },
+      });
+    } catch (error) {
+      console.log(error.response);
+      // logoutUser()
+    }
+
+    clearAlert();
   };
 
   return (
@@ -301,6 +324,7 @@ const AppProvider = ({ children }) => {
         setEditCard,
         deleteCard,
         editCard,
+        showStats,
       }}
     >
       {children}

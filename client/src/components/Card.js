@@ -46,10 +46,10 @@ const Card = ({
             <div className="info">
               <h5>{definition}</h5>
               <p className="card-type">{type}</p>
-              <p className="example">
+              {/* <p className="example">
                 {exampleOne || exampleTwo ? "Examples:" : null}
-              </p>
-              <p>{exampleOne}</p>
+              </p> */}
+              <p className="example">{exampleOne}</p>
               <p>{exampleTwo}</p>
             </div>
             <footer>

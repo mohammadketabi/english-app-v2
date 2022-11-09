@@ -7,6 +7,10 @@ import BigSidebar from "./BigSidebar";
 import FormRowSelect from "./FormRowSelect";
 import CardsContainer from "./CardsContainer";
 import SearchContainer from "./SearchContainer";
+import StatsContainer from "./StatsContainer";
+import ChartsContainer from "./ChartsContainer";
+import StatsItem from "./StatsItem";
+import Loading from "./Loading";
 
 export {
   Logo,
@@ -18,4 +22,8 @@ export {
   FormRowSelect,
   CardsContainer,
   SearchContainer,
+  StatsContainer,
+  ChartsContainer,
+  StatsItem,
+  Loading,
 };
