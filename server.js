@@ -44,16 +44,6 @@ app.use(helmet());
 app.use(xss());
 app.use(mongoSanitize());
 
-app.get("/", (req, res) => {
-  //   throw new Error("err");
-  res.json({ msg: "Welcome!" });
-});
-
-app.get("/api/v1", (req, res) => {
-  //   throw new Error("err");
-  res.json({ msg: "API" });
-});
-
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/cards", authenticateUser, flashCardsRoutes);
 
