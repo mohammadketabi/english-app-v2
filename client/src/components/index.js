@@ -9,8 +9,13 @@ import CardsContainer from "./CardsContainer";
 import SearchContainer from "./SearchContainer";
 import StatsContainer from "./StatsContainer";
 import ChartsContainer from "./ChartsContainer";
-import StatsItem from "./StatsItem";
+import StatItem from "./StatItem";
 import Loading from "./Loading";
+import BarChartComponent from "./BarChartComponent";
+import AreaChartComponent from "./AreaChartComponent";
+import Card from "./Card";
+import NavLinks from "./NavLinks";
+import PageBtnContainer from "./PageBtnContainer";
 
 export {
   Logo,
@@ -24,6 +29,11 @@ export {
   SearchContainer,
   StatsContainer,
   ChartsContainer,
-  StatsItem,
+  StatItem,
   Loading,
+  BarChartComponent,
+  AreaChartComponent,
+  Card,
+  NavLinks,
+  PageBtnContainer,
 };

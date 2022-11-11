@@ -3,6 +3,7 @@ import { StatusCodes } from "http-status-codes";
 import { BadRequestError, NotFoundError } from "../errors/index.js";
 import checkPermissions from "../utils/checkPermissions.js";
 import mongoose from "mongoose";
+import moment from "moment";
 
 const createCard = async (req, res) => {
   const { word, definition } = req.body;
@@ -18,10 +19,53 @@ const createCard = async (req, res) => {
 };
 
 const getAllCards = async (req, res) => {
-  const cards = await Card.find({ createdBy: req.user.userId });
-  res
-    .status(StatusCodes.OK)
-    .json({ cards, totalCards: cards.length, numOfPages: 1 });
+  const { search, status, type, sort } = req.query;
+
+  const queryObject = {
+    createdBy: req.user.userId,
+  };
+
+  if (status !== "all") {
+    queryObject.status = status;
+  }
+
+  if (type !== "all") {
+    queryObject.type = type;
+  }
+
+  if (search) {
+    queryObject.word = { $regex: search, $options: "i" };
+  }
+
+  // NO AWAIT
+  let result = Card.find(queryObject);
+
+  // chain sort conditions
+  if (sort === "latest") {
+    result = result.sort("-createdAt");
+  }
+  if (sort === "oldest") {
+    result = result.sort("createdAt");
+  }
+  if (sort === "a-z") {
+    result = result.sort("word");
+  }
+  if (sort === "z-a") {
+    result = result.sort("-word");
+  }
+
+  const page = Number(req.query.page) || 1;
+  const limit = Number(req.query.limit) || 9;
+  const skip = (page - 1) * limit;
+
+  result = result.skip(skip).limit(limit);
+
+  const cards = await result;
+
+  const totalCards = await Card.countDocuments(queryObject);
+  const numOfPages = Math.ceil(totalCards / limit);
+
+  res.status(StatusCodes.OK).json({ cards, totalCards, numOfPages });
 };
 
 const deleteCard = async (req, res) => {
@@ -82,7 +126,40 @@ const showStats = async (req, res) => {
     review: stats.review || 0,
     favorite: stats.favorite || 0,
   };
-  let monthlyWords = [];
+
+  let monthlyWords = await Card.aggregate([
+    { $match: { createdBy: mongoose.Types.ObjectId(req.user.userId) } },
+    {
+      $group: {
+        _id: {
+          year: {
+            $year: "$createdAt",
+          },
+          month: {
+            $month: "$createdAt",
+          },
+        },
+        count: { $sum: 1 },
+      },
+    },
+    { $sort: { "_id.year": -1, "_id.month": -1 } },
+    { $limit: 12 },
+  ]);
+
+  monthlyWords = monthlyWords
+    .map((item) => {
+      const {
+        _id: { year, month },
+        count,
+      } = item;
+      // accepts 0-11
+      const date = moment()
+        .month(month - 1)
+        .year(year)
+        .format("MMM Y");
+      return { date, count };
+    })
+    .reverse();
 
   res.status(StatusCodes.OK).json({ defaultStats, monthlyWords });
 };

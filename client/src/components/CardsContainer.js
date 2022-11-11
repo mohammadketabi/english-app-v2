@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useAppContext } from "../context/appContext";
-import { useEffect } from "react";
-import Loading from "./Loading";
-import Card from "./Card";
+import { Loading, Card } from ".";
 import Wrapper from "../assets/wrappers/CardsContainer";
+import { PageBtnContainer } from ".";
 
 const CardsContainer = () => {
-  const { getCards, cards, isLoading, page, totalCards } = useAppContext();
+  const {
+    getCards,
+    cards,
+    isLoading,
+    page,
+    totalCards,
+    search,
+    searchStatus,
+    searchType,
+    sort,
+    numOfPages,
+  } = useAppContext();
 
   useEffect(() => {
     getCards();
-  }, []);
+  }, [page, search, searchStatus, searchType, sort]);
 
   if (isLoading) {
     return <Loading center />;
@@ -32,6 +42,7 @@ const CardsContainer = () => {
           return <Card key={card._id} {...card} />;
         })}
       </div>
+      {numOfPages > 1 && <PageBtnContainer />}
     </Wrapper>
   );
 };
