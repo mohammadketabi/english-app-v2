@@ -154,10 +154,13 @@ const AppProvider = ({ children }) => {
       });
       addUserToLocalStorage({ user, token, location });
     } catch (error) {
-      dispatch({
-        type: SETUP_USER_ERROR,
-        payload: { msg: error.response.data.msg },
-      });
+      if (error.response.status === 429) {
+        dispatch({
+          type: SETUP_USER_ERROR,
+          payload: { msg: "Too many requests, please try later" },
+        });
+        return;
+      }
     }
     clearAlert();
   };
