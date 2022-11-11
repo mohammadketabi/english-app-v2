@@ -9,10 +9,12 @@ import {
   showStats,
 } from "../controllers/flashCardController.js";
 
-router.route("/").post(createCard).get(getAllCards);
+import testUser from "../middleware/testUser.js";
+
+router.route("/").post(testUser, createCard).get(getAllCards);
 
 router.route("/stats").get(showStats);
 
-router.route("/:id").delete(deleteCard).patch(updateCard);
+router.route("/:id").delete(testUser, deleteCard).patch(testUser, updateCard);
 
 export default router;

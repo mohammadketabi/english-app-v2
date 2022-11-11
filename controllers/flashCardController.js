@@ -19,6 +19,7 @@ const createCard = async (req, res) => {
 };
 
 const getAllCards = async (req, res) => {
+  console.log(req.user);
   const { search, status, type, sort } = req.query;
 
   const queryObject = {

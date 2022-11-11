@@ -1,4 +1,4 @@
-import React, { useReducer, useContext, useEffect } from "react";
+import React, { useReducer, useContext } from "react";
 import axios from "axios";
 
 import reducer from "./reducer";
@@ -23,6 +23,7 @@ import {
   GET_CARDS_SUCCESS,
   SET_EDIT_CARD,
   DELETE_CARD_BEGIN,
+  DELETE_CARD_ERROR,
   EDIT_CARD_BEGIN,
   EDIT_CARD_SUCCESS,
   EDIT_CARD_ERROR,
@@ -255,8 +256,7 @@ const AppProvider = ({ children }) => {
         },
       });
     } catch (error) {
-      console.log(error.response);
-      //logoutUser();
+      logoutUser();
     }
     clearAlert();
   };
@@ -298,8 +298,13 @@ const AppProvider = ({ children }) => {
       await authFetch.delete(`/cards/${cardId}`);
       getCards();
     } catch (error) {
-      //logoutUser();
+      if (error.response.status === 401) return;
+      dispatch({
+        type: DELETE_CARD_ERROR,
+        payload: { msg: error.response.data.msg },
+      });
     }
+    clearAlert();
   };
 
   const showStats = async () => {
@@ -314,8 +319,7 @@ const AppProvider = ({ children }) => {
         },
       });
     } catch (error) {
-      console.log(error.response);
-      // logoutUser()
+      logoutUser();
     }
 
     clearAlert();

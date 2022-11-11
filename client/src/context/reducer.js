@@ -18,6 +18,7 @@ import {
   GET_CARDS_SUCCESS,
   SET_EDIT_CARD,
   DELETE_CARD_BEGIN,
+  DELETE_CARD_ERROR,
   EDIT_CARD_BEGIN,
   EDIT_CARD_SUCCESS,
   EDIT_CARD_ERROR,
@@ -191,6 +192,15 @@ const reducer = (state, action) => {
 
   if (action.type === DELETE_CARD_BEGIN) {
     return { ...state, isLoading: true };
+  }
+  if (action.type === DELETE_CARD_ERROR) {
+    return {
+      ...state,
+      isLoading: false,
+      showAlert: true,
+      alertType: "danger",
+      alertText: action.payload.msg,
+    };
   }
 
   if (action.type === EDIT_CARD_BEGIN) {

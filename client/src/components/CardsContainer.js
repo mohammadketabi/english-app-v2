@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useAppContext } from "../context/appContext";
-import { Loading, Card } from ".";
+import { Loading, Card, Alert } from ".";
 import Wrapper from "../assets/wrappers/CardsContainer";
 import { PageBtnContainer } from ".";
 
@@ -16,10 +16,12 @@ const CardsContainer = () => {
     searchType,
     sort,
     numOfPages,
+    showAlert,
   } = useAppContext();
 
   useEffect(() => {
     getCards();
+    // eslint-disable-next-line
   }, [page, search, searchStatus, searchType, sort]);
 
   if (isLoading) {
@@ -34,6 +36,7 @@ const CardsContainer = () => {
   }
   return (
     <Wrapper>
+      {showAlert && <Alert />}
       <h5>
         {totalCards} card{cards.length > 1 && "s"} found
       </h5>
