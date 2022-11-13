@@ -14,6 +14,16 @@ const SharedLayout = () => {
           <div className="dashboard-page">
             <Outlet />
           </div>
+          <footer className="copyright-shared">
+            © 2022 Develope by
+            <a
+              className="mohammad-shared"
+              href="https://mohammadketabi.com"
+              target="_blank"
+            >
+              Mohammad Ketabi
+            </a>
+          </footer>
         </div>
       </main>
     </Wrapper>

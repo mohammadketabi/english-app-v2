@@ -31,6 +31,16 @@ const Landing = () => {
         </div>
         <img src={main} alt="job hunt" className="img main-img" />
       </div>
+      <footer className="copyright">
+        © 2022 Develope by
+        <a
+          className="mohammad"
+          href="https://mohammadketabi.com"
+          target="_blank"
+        >
+          Mohammad Ketabi
+        </a>
+      </footer>
     </Wrapper>
   );
 };

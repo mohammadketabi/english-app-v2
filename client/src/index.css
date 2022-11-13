@@ -380,3 +380,30 @@ ul {
   margin-bottom: 1rem !important;
   font-size: 15px;
 }
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--grey-100);
+  color: var(--primary-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mohammad,
+.mohammad-shared {
+  color: var(--primary-700) !important;
+  padding-left: 10px;
+  text-decoration: none !important;
+}
+
+.copyright-shared {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
